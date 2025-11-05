@@ -11,9 +11,7 @@ int main () {
         //  traversal
         for ( int j = 0; j < n-1-i; j++) { // to avoid extra comparison we use n-1-i instead of n-1
             if (arr[j] > arr[j+1]) { //then swap
-                int temp = arr[j];
-                arr[j] = arr[j+1];
-                arr [j+1] = temp;
+                swap(arr[j],arr[j+1]);
             }
         }
     }

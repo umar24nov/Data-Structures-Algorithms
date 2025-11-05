@@ -4,11 +4,14 @@ int main (){
     string str = "Mohammad Umar";
     int n = str.length();
     int count = 0;
-    char x = 'a';
+    char x;
+    cout<<"Enter a character to count its occurrences: ";
+    cin >> x;
+
     for(int i = 0; i <= n; i++){
         if(str[i] == x)
         count++;
     }
-    cout<<"The occurence of "<<x<<" in "<< str <<" is "<<count<<" times!";
+    cout<<"The occurence of "<<x<<" in "<< str <<" is "<<count<<".";
     return 0;
 }

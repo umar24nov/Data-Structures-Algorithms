@@ -12,12 +12,10 @@ int main () {
 
     // selection sort 
     for(int i = 0; i < n -1; i++) {
-        int min = INT_MAX;
-        int mindx = -1;
+        int mindx = i;
         // minimum element calculation in first box
         for (int j = i; j < n; j++) {
-            if(arr[j] < min) {
-                min = arr[j];
+            if(arr[j] < arr[mindx]) {
                 mindx = j;
             }
         }

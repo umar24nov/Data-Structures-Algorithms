@@ -14,21 +14,23 @@ using namespace std;
 
 int main() {
     int n;
-    cout << "Enter the number of rows: ";
+    cout << "Enter the number of rows/columns: ";
     cin >> n;
 
-    for (int i = 1; i <= n; ++i) {
-        for (int j = 1; j <= n - i; ++j) {
+    for (int i = 1; i <= n; i++) {
+        int x = 65;
+        // Print Spaces
+        for (int j = 1; j <= n - i; j++) {
             cout << "  ";
         }
-        for (int j = 1; j <= i; ++j) {
-            cout << "* ";
+        // Print Stars
+        for(int j = 1; j <= 2*i-1; j++){ 
+            cout << (char)x <<" ";
+            x++;
         }
-        for (int j = 1; j < i; ++j) {
-            cout << "* ";
-        }
-        cout << endl;
+        cout<<endl;  
     }
     return 0;
 }
-5
+
+

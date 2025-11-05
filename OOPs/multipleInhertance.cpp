@@ -9,7 +9,7 @@ public:
 class Engineer{
 public:
     int experience;
-    string doamin;
+    string domain;
 };
 class Phodu : public Engineer,Cricketer{ // Multiple Inheritance
 public:

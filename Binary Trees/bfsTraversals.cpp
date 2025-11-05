@@ -2,7 +2,7 @@
 #include <queue>
 using namespace std;
 
-class Node{
+class Node {
 public:
     int val;
     Node* right;
@@ -10,7 +10,7 @@ public:
     Node(int val){
         this->val = val;
         this->left = NULL;
-        this->right = NULL;
+        this->right = NULL;   
     }
 };
 
@@ -27,12 +27,12 @@ void nthlevel(Node* root, int  currLevel, int tarlevel){
         return;
     }
     
-    nthlevel(root->left, currLevel+1, tarlevel); // left
+    nthlevel(root->left, currLevel+1, tarlevel);  // left
     nthlevel(root->right, currLevel+1, tarlevel); // right
 }
 
 
-// Just have to interchange the call left with right for reverse printing
+// Just have to interchange the calls (left with right) for reverse printing
 void nthlevelRev(Node* root, int  currLevel, int tarlevel){
     if(root ==  NULL) return;
     if(currLevel == tarlevel){
@@ -81,7 +81,7 @@ int main(){
     b->right = e;
     c->left = f;
     c->right = g;
-    // levelOrder(a); // passing (root, currLevel, tarLevel
+    // levelOrder(a); // passing (root, currLevel, tarLevel)
     levelOrderQueue(a);
     
 

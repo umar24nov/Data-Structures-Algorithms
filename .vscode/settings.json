@@ -60,7 +60,8 @@
     "*.embeddedhtml": "html",
     "iostream": "cpp",
     "functional": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "new": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }

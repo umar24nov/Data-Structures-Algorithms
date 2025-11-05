@@ -24,6 +24,5 @@ int main(){
     int a;
     cout<<"Enter number of rows : ";
     cin>>a;
-    int b;
     squarePattern(a);
 }
