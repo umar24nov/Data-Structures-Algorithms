@@ -18,7 +18,7 @@ int binarySearch(vector<int>& arr, int target){
 }
 
 int main (){
-    vector<int> v = {1,2,5,6,9,1,11,30,51,66};
+    vector<int> v = {1,2,2,5,6,9,1,11,30,51,66};
     int num;
     cout << "Enter a number : ";
     cin >> num;

@@ -13,7 +13,7 @@ bool haveDuplicates(vector<int>& arr){
 }
 
 int main (){
-    vector<int> arr = {1,3,4,5,7,2};
+    vector<int> arr = {1,3,4,5,7,2,3};
     cout << haveDuplicates(arr);
     return 0;
 }
